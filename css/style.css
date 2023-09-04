@@ -28,6 +28,9 @@
 .col-12 {
     flex-basis: 100%;
 }
+.col-4 {
+    flex-basis: calc(100% / 3 );
+}
 
 
 /* header  */
@@ -58,6 +61,11 @@
     padding: 40px;
     min-height: 400px;
 }
+.footer-section {
+    min-height: 400px;
+    /* background-color: black; */
+}
+
 
 /* DEBUG */
 .debug .page-header {
@@ -113,4 +121,20 @@
     background-color: green;
     min-height: 700px;
     border: 2px dashed black;
+}
+.debug .footer-section {
+    background-color: black;
+
+}
+.debug .footer-section .row {
+    min-height: 500px;
+    padding: 20px;
+}
+.debug .footer-section .row .col-4 {
+    background-color: pink;
+    border: 2px dashed black;
+}
+.debug .footer-section .row .col-2 {
+    background-color: lightseagreen;
+    border: 2px dashed white;
 }
