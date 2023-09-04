@@ -8,7 +8,7 @@
 }
 
 .background-black {
-  background-color: black;  
+    background-color: black;  
 }
 /* flex  */
 .row {
@@ -18,6 +18,10 @@
 .container {
     width: 1000px;
     margin: 0 auto;
+}
+.container__first-section {
+    display: flex;
+    justify-content: center;
 }
 /* colonne schema da 12 */
 .col-2 {
@@ -50,10 +54,6 @@
         padding: 10px;
 }
 
-.container__first-section {
-    display: flex;
-    justify-content: center;
-}
 .link {
     text-align: center;
 }
@@ -152,9 +152,6 @@ button {
     min-height: 700px;
     border: 2px dashed black;
 }
-
-
-
 .debug .footer-section .row {
     min-height: 500px;
     padding: 20px;
@@ -170,6 +167,4 @@ button {
 .debug .footer-button .row {
     min-height: 40px;
     background-color: aquamarine;
-    
-   
 }
