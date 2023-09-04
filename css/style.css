@@ -25,6 +25,11 @@
 .col-5 {
     flex-basis: calc(100% / (12 / 5) );
 }
+.col-12 {
+    flex-basis: 100%;
+}
+
+
 /* header  */
 
 .container__first-section {
@@ -45,7 +50,12 @@
 
 }
 /* seconda sezione */
-.second-section {
+.section-seven-five {
+    min-height: 400px;
+}
+.section-twelve {
+    background-color: lightgray;
+    padding: 40px;
     min-height: 400px;
 }
 
@@ -77,14 +87,14 @@
     max-width: 800px; 
     flex-basis: 800px;
 }
-.debug .second-section{
+.debug .section-seven-five {
     background-color: white;
     min-height: 400px;
     padding: 40px;
 
 }
 
-.debug .second-section .row {
+.debug .section-seven-five .row {
     border: 2px dashed black;
     min-height: 350px;
   
@@ -94,4 +104,13 @@
 }
 .debug .col-5 {
     background-color: lightpink;
+}
+
+.debug .background-gray {
+    background-color: lightgray;
+}
+.debug .section-twelve .row .col-12 {
+    background-color: green;
+    min-height: 700px;
+    border: 2px dashed black;
 }
