@@ -16,16 +16,35 @@
 .page-header .row {
     justify-content: space-between;
 }
+/* prima sezione  */
+.container__first-section {
+    display: flex;
+    justify-content: center;
+}
 
 /* DEBUG */
 .debug .page-header {
     min-height: 80px;
     padding: 20px;
     background-color: aqua;
-
+    
 }
 .debug .page-header .row {
     background-color: yellow;
     border: 2px dashed black;
     padding: 10px;
+}
+.debug .first-section{
+    background-color: blue;
+    min-height: 400px;
+    padding: 40px;
+
+}
+
+.debug .first-section .row {
+    border: 2px dashed black;
+    min-height: 350px;
+    background-color: palevioletred;
+    max-width: 800px; 
+    flex-basis: 800px;
 }
