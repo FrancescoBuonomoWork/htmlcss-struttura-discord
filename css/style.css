@@ -3,3 +3,29 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+/* flex  */
+.row {
+    display: flex;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+/* header  */
+.page-header .row {
+    justify-content: space-between;
+}
+
+/* DEBUG */
+.debug .page-header {
+    min-height: 80px;
+    padding: 20px;
+    background-color: aqua;
+
+}
+.debug .page-header .row {
+    background-color: yellow;
+    border: 2px dashed black;
+    padding: 10px;
+}
