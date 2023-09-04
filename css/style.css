@@ -63,7 +63,27 @@
 }
 .footer-section {
     min-height: 400px;
-    /* background-color: black; */
+    margin-bottom: 2px;
+    padding-bottom: 20px;
+    
+}
+.background-black {
+  background-color: black;  
+}
+.footer-button {
+    padding-top: 20px;
+}
+/* bottoni  */
+.footer-button .col-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+button {
+    padding: 4px;
+}
+.bottone {
+    text-align: right;
 }
 
 
@@ -122,10 +142,9 @@
     min-height: 700px;
     border: 2px dashed black;
 }
-.debug .footer-section {
-    background-color: black;
 
-}
+
+
 .debug .footer-section .row {
     min-height: 500px;
     padding: 20px;
@@ -137,4 +156,10 @@
 .debug .footer-section .row .col-2 {
     background-color: lightseagreen;
     border: 2px dashed white;
+}
+.debug .footer-button .row {
+    min-height: 40px;
+    background-color: aquamarine;
+    
+   
 }
