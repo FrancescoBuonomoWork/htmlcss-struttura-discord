@@ -12,14 +12,32 @@
     width: 1000px;
     margin: 0 auto;
 }
+/* colonne schema da 12 */
+.col-2 {
+    flex-basis: calc(100% / 6);
+}
+.col-8 {
+    flex-basis: calc(100% / (12 / 8) );
+}
+.col-7 {
+    flex-basis: calc(100% / (12 / 7) );
+}
+.col-5 {
+    flex-basis: calc(100% / (12 / 5) );
+}
 /* header  */
 .page-header .row {
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 /* prima sezione  */
+
 .container__first-section {
     display: flex;
     justify-content: center;
+}
+/* seconda sezione */
+.second-section {
+    min-height: 400px;
 }
 
 /* DEBUG */
@@ -33,6 +51,7 @@
     background-color: yellow;
     border: 2px dashed black;
     padding: 10px;
+    
 }
 .debug .first-section{
     background-color: blue;
@@ -47,4 +66,22 @@
     background-color: palevioletred;
     max-width: 800px; 
     flex-basis: 800px;
+}
+.debug .second-section{
+    background-color: white;
+    min-height: 400px;
+    padding: 40px;
+
+}
+
+.debug .second-section .row {
+    border: 2px dashed black;
+    min-height: 350px;
+    background-color: black;
+}
+.debug .col-7 {
+    background-color: lightblue;
+}
+.debug .col-5 {
+    background-color: lightpink;
 }
