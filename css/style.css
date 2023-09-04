@@ -26,14 +26,23 @@
     flex-basis: calc(100% / (12 / 5) );
 }
 /* header  */
-.page-header .row {
-    /* justify-content: space-between; */
-}
-/* prima sezione  */
 
 .container__first-section {
     display: flex;
     justify-content: center;
+}
+.link {
+    text-align: center;
+}
+.login {
+    text-align: right;
+}
+
+/* prima sezione  */
+.first-section{
+    background-color: blue;
+    padding: 40px;
+
 }
 /* seconda sezione */
 .second-section {
@@ -47,16 +56,17 @@
     background-color: aqua;
     
 }
-.debug .page-header .row {
+.debug .page-header .row .logo,.link,.login {
     background-color: yellow;
     border: 2px dashed black;
     padding: 10px;
     
 }
+
 .debug .first-section{
-    background-color: blue;
+    /* background-color: blue; */
     min-height: 400px;
-    padding: 40px;
+    /* padding: 40px; */
 
 }
 
@@ -77,7 +87,7 @@
 .debug .second-section .row {
     border: 2px dashed black;
     min-height: 350px;
-    background-color: black;
+  
 }
 .debug .col-7 {
     background-color: lightblue;
