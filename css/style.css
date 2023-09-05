@@ -20,8 +20,8 @@
     margin: 0 auto;
 }
 .container-small {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     max-width: 800px; 
     margin: 0 auto;
 }
@@ -126,7 +126,14 @@ button {
     
 }
 
-.debug .first-section .row {
+/* .debug .first-section .row  {
+    border: 2px dashed black;
+    min-height: 350px;
+    background-color: palevioletred;
+    flex-basis: 800px;
+} */
+.debug .first-section .col-12 {
+    
     border: 2px dashed black;
     min-height: 350px;
     background-color: palevioletred;
@@ -169,7 +176,11 @@ button {
     background-color: lightseagreen;
     border: 2px dashed white;
 }
-.debug .footer-button .row {
+/* .debug .footer-button .row {
+    min-height: 40px;
+    background-color: aquamarine;
+} */
+.debug .footer-button .row .col-12{
     min-height: 40px;
     background-color: aquamarine;
 }
