@@ -3,9 +3,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-.background-gray {
-    background-color: lightgray;
-}
 
 .background-black {
     background-color: black;  
@@ -15,13 +12,18 @@
     display: flex;
     flex-wrap: wrap;
 }
+.row-reverse {
+    flex-direction: row-reverse;
+}
 .container {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
-.container__first-section {
+.container-small {
     display: flex;
     justify-content: center;
+    max-width: 800px; 
+    margin: 0 auto;
 }
 /* colonne schema da 12 */
 .col-2 {
@@ -42,16 +44,15 @@
 .col-4 {
     flex-basis: calc(100% / 3 );
 }
-
+/* .col-10 {
+    flex-basis: calc(100% / (12 / 10));
+} */
 
 /* header  */
 .page-header {
-    background-color: aqua;
     
 }
 .page-header .row .logo,.link,.login {
-        background-color: yellow;
-        padding: 10px;
 }
 
 .link {
@@ -105,11 +106,16 @@ button {
 .debug .page-header {
     min-height: 80px;
     padding: 20px;
+    background-color: aqua;
     
 }
-.debug .page-header .row .logo,.link,.login {
+.debug .page-header .row .logo,
+.debug .page-header .row .link,
+.debug .page-header .row .login {
     
     border: 2px dashed black;
+    background-color: yellow;
+    padding: 10px;
     
 }
 
@@ -117,25 +123,24 @@ button {
     /* background-color: blue; */
     min-height: 400px;
     /* padding: 40px; */
-
+    
 }
 
 .debug .first-section .row {
     border: 2px dashed black;
     min-height: 350px;
     background-color: palevioletred;
-    max-width: 800px; 
     flex-basis: 800px;
 }
 .debug .section-seven-five {
     min-height: 400px;
-
+    
 }
 
-.debug .section-seven-five .row {
+.debug .section-seven-five .row .col-5, .col-7 {
     border: 2px dashed black;
     min-height: 350px;
-  
+    
 }
 .debug .col-7 {
     background-color: lightblue;
@@ -152,10 +157,10 @@ button {
     min-height: 700px;
     border: 2px dashed black;
 }
-.debug .footer-section .row {
+/* .debug .footer-section .row {
     min-height: 500px;
     padding: 20px;
-}
+} */
 .debug .footer-section .row .col-4 {
     background-color: pink;
     border: 2px dashed black;
@@ -167,4 +172,21 @@ button {
 .debug .footer-button .row {
     min-height: 40px;
     background-color: aquamarine;
+}
+
+.background-gray {
+    background-color: lightgray;
+}
+/* diamo un altezza a tutte le classi che iniziano con col-  */
+.debug main [class^='col-'] {
+    min-height: 200px;
+    border: 2px dashed black;
+    padding: 20px;
+}
+.debug .footer-section .col-4,
+.debug .footer-section .col-2 {
+    min-height: 400px;
+    border: 2px dashed white;
+    padding: 30px;
+
 }
